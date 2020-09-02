@@ -4,8 +4,20 @@
 ### What is this repository for? ###
 
 
-* Quick summary
-    
+* Summary
+    The purpose of this plugin is to provide and integrate solution for 
+    adding admin menus, submenus, help tabs and help sidebars. To leverage this 
+    subsystem you need to inject the descriptive details of the component you 
+    want to create (admin menu, submenu, help tab or help sidebar). The 
+    subsystem takes care of interacting with WordPress to ensure your 
+    component shows as expected.
+    The Logic class fulfills the purpose of the subsystem. In addition it:
+        - incorporates action hooks to facilitate external changes
+        - injects a help tab into the controller's "data visualization" submenu
+          providing descriptive details about the subsystem.
+
+    The Api class provides methods for external interaction with the subsystem. 
+    the relevant details (title, content, etc.) to describe your addition. 
 * Version
     Release: 1.0.0
 * License GPL 2+
@@ -21,23 +33,6 @@
  
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Repo owner
+    https://twocarrs.com/dblox
+    support@twocarrs.com
